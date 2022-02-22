@@ -21,12 +21,13 @@
 
 //#include "main.h"
 
-void RE_user_init(
-    GPIO_TypeDef *,
-    uint16_t); // Init function, records port and pin of Encoder pin B
-void RE_user_int_handler(
-    void); // Place into interrupt handler for pin A of Encoder
-int8_t RE_user_getticks(
-    void); // Get Tick count since last poll (Positive = CW, Negative = CCW)
+// Init function, records port and pin of Encoder pin B
+void RE_user_init(GPIO_TypeDef *, uint16_t);
+
+// Place into interrupt handler for pin A of Encoder
+void RE_user_int_handler(void);
+
+// Get Tick count since last poll (Positive = CW, Negative = CCW)
+int8_t RE_user_getticks(void);
 
 #endif /* SRC_RE_USER_H_ */
