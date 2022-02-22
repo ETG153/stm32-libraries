@@ -19,8 +19,9 @@
 #ifndef SRC_RE_USER_H
 #define SRC_RE_USER_H
 
-#include "main.h"
 #include <stdint.h>
+
+#include "main.h"
 
 volatile int8_t _RE_Ticks;
 GPIO_TypeDef *_PB_Port;
