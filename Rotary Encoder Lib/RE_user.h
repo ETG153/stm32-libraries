@@ -22,7 +22,7 @@
 //#include "main.h"
 
 // Init function, records port and pin of Encoder pin B
-void RE_user_init(GPIO_TypeDef, uint16_t);
+void RE_user_init(GPIO_TypeDef *, uint16_t);
 
 // Place into interrupt handler for pin A of Encoder
 void RE_user_int_handler(void);
